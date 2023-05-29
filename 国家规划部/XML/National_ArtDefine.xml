@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 12/5/2022 4:53:39 PM -->
+<GameData>
+	<IconTextureAtlases>
+		<Row>
+			<Atlas>NationalPlanning_ATLAS</Atlas>
+			<IconSize>256</IconSize>
+			<Filename>QYNationalWonder256.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>3</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>NationalPlanning_ATLAS</Atlas>
+			<IconSize>128</IconSize>
+			<Filename>QYNationalWonder128.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>3</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>NationalPlanning_ATLAS</Atlas>
+			<IconSize>80</IconSize>
+			<Filename>QYNationalWonder80.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>3</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>NationalPlanning_ATLAS</Atlas>
+			<IconSize>64</IconSize>
+			<Filename>QYNationalWonder64.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>3</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>NationalPlanning_ATLAS</Atlas>
+			<IconSize>45</IconSize>
+			<Filename>QYNationalWonder45.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>3</IconsPerColumn>
+		</Row>
+
+		<Row>
+			<Atlas>GERMAN_WAFFEN_SS_FLAG_ATLAS</Atlas>
+			<IconSize>32</IconSize>
+			<Filename>Schutzstaffel_32.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+	</IconTextureAtlases>
+
+</GameData>
