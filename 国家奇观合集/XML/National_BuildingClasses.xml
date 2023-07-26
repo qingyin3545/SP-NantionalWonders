@@ -60,12 +60,6 @@
 			<Description>TXT_KEY_HOUSE_OF_LORDS</Description>
 			<MaxPlayerInstances>1</MaxPlayerInstances>
 		</Row>
-		<!--贵族议会假建筑-->
-		<Row>
-			<Type>BUILDINGCLASS_HOUSE_OF_LORDS_FREE</Type>
-			<DefaultBuilding>BUILDING_HOUSE_OF_LORDS_FREE</DefaultBuilding>
-			<Description>TXT_KEY_HOUSE_OF_LORDS_FREE</Description>
-		</Row>
 
 		<!--皇城司-->
 		<Row>

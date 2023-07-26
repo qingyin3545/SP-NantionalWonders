@@ -3,24 +3,7 @@
 <GameData>
 	<!--建筑全局产出-->
 	<Building_GlobalYieldModifiers>
-
-		<!--贵族议会每城全局+1%科研金钱产能-->
-		<Row>
-			<BuildingType>BUILDING_HOUSE_OF_LORDS_FREE</BuildingType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_HOUSE_OF_LORDS_FREE</BuildingType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_HOUSE_OF_LORDS_FREE</BuildingType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
-		</Row>
-
+	
 	</Building_GlobalYieldModifiers>
 
 	<!--建筑本城百分比产出-->

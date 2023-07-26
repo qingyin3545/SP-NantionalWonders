@@ -1,15 +1,5 @@
 --∆¡±Œ≥«∞Ó‘Ï∆Êπ€
-DELETE FROM Civilization_BuildingClassOverrides
-WHERE (CivilizationType = 'CIVILIZATION_BARBARIAN' OR CivilizationType = 'CIVILIZATION_MINOR') 
-AND BuildingClassType != 'BUILDINGCLASS_PALACE'
-AND BuildingClassType IN 
-(SELECT Type FROM BuildingClasses WHERE Type = BuildingClassType AND (MaxPlayerInstances = 1 OR MaxGlobalInstances = 1));
-
-INSERT INTO Civilization_BuildingClassOverrides(CivilizationType,BuildingClassType,BuildingType)
-SELECT 'CIVILIZATION_BARBARIAN',Type,NULL FROM BuildingClasses
-WHERE (MaxPlayerInstances = 1 OR MaxGlobalInstances = 1) AND Type != 'BUILDINGCLASS_PALACE' UNION ALL
-SELECT 'CIVILIZATION_MINOR',Type,NULL FROM BuildingClasses
-WHERE MaxPlayerInstances = 1 OR MaxGlobalInstances = 1 AND Type != 'BUILDINGCLASS_PALACE';
+UPDATE SPTriggerControler SET Enabled = 1 WHERE TriggerType = 'Minor_Building_Overrides_Trigger';
 
 
 INSERT INTO Building_BuildingClassYieldChanges(BuildingType , BuildingClassType , YieldType , YieldChange)

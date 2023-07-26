@@ -50,7 +50,7 @@
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_HOUSE_OF_LORDS</BuildingType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
 			<Flavor>150</Flavor>
 		</Row>
 		<Row>

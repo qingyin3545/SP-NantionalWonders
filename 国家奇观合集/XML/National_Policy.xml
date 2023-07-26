@@ -3,6 +3,12 @@
 <GameData>
 	
 	<Policies>
+		<!--贵族议会-->
+		<Row>
+			<Type>POLICY_HOUSE_OF_LORDS_FREE</Type>
+			<Description>TXT_KEY_HOUSE_OF_LORDS_FREE</Description>
+		</Row>
+
 		<!--工业规划部-->
 		<Row>
 			<Type>POLICY_INDUSTRIAL_PLANNING_DIVISION</Type>
@@ -33,6 +39,25 @@
 			<UnitPurchaseCostModifier>-15</UnitPurchaseCostModifier>
 		</Row>
 		
-	</Policies>	
+	</Policies>
+
+	<Policy_CityNumberCityYieldModifier>
+		<!--贵族议会每城全局+1%科研金钱信仰-->
+		<Row>
+			<PolicyType>POLICY_HOUSE_OF_LORDS_FREE</PolicyType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_HOUSE_OF_LORDS_FREE</PolicyType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_HOUSE_OF_LORDS_FREE</PolicyType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Policy_CityNumberCityYieldModifier>
   
 </GameData>

@@ -14,6 +14,7 @@ local nuclearDepartment = GameInfoTypes["BUILDING_NUCLEAR_POWER_MANAGEMENT_DEPAR
 local industrialDivision = GameInfoTypes["BUILDING_INDUSTRIAL_PLANNING_DIVISION"]
 --贵族议会
 local houseOfLords = GameInfoTypes["BUILDING_HOUSE_OF_LORDS"]
+local houseOfLordsPolicy = GameInfoTypes["POLICY_HOUSE_OF_LORDS_FREE"]
 --皇城司
 local imperialCityDepartment = GameInfoTypes["BUILDING_IMPERIAL_CITY_DEPARTMENT"]
 --近卫军
@@ -70,6 +71,10 @@ function QYNationalWonderCompletedDo(iPlayer, iCity, iBuilding, bGold, bFaithOrC
 			else
 				pPlayer:AddNotification(NotificationTypes.NOTIFICATION_FREE_POLICY, Locale.ConvertTextKey("TXT_KEY_NOTIFICATION_FREE_POLICY"));
 				pPlayer:SetNumFreePolicies(pPlayer:GetNumFreePolicies() + 1)
+			end
+			--赠送假政策
+			if not pPlayer:HasPolicy(houseOfLordsPolicy) then
+				pPlayer:SetHasPolicy(houseOfLordsPolicy,true,true)
 			end
 
 		--皇城司
@@ -140,7 +145,6 @@ end
 GameEvents.CityConstructed.Add(QYNationalWonderCompletedDo)
 
 --假建筑列表
-local houseOfLordsFree =  GameInfoTypes.BUILDING_HOUSE_OF_LORDS_FREE
 local thermalPowerDepartmentFree =  GameInfoTypes.BUILDING_NATIONAL_PLANNING_GLOBAL_HEALTH_ELECTRICITY
 local industrialDivisionFree = GameInfoTypes.BUILDING_NATIONAL_PLANNING_GLOBAL_HEALTH
 local imperialCollegeFree = GameInfoTypes.BUILDING_IMPERIAL_COLLEGE_OF_SUPERVISION_FREE
@@ -153,7 +157,6 @@ function QYNationalWonderEffectDoEveryTurn(iPlayer)
 	local pPlayer = Players[iPlayer]
 	if not pPlayer:IsMajorCiv() then return end
 
-	local playerHasHOL = pPlayer:HasBuilding(houseOfLords) --贵族议会数
 	local playerHasTPPD = pPlayer:HasBuilding(thermalPowerDepartment) --火电管理局
 	local playerHasIPD = pPlayer:HasBuilding(industrialDivision) --工业规划部
 	--赠送假建筑
@@ -170,13 +173,6 @@ function QYNationalWonderEffectDoEveryTurn(iPlayer)
 		--解放纪念堂城市标记
 		if iCity:IsHasBuilding(lincolnMemorial) then 
 			LinConCity = iCity
-		end
-
-		--贵族议会
-		if playerHasTPPD then
-			iCity:SetNumRealBuilding(houseOfLordsFree,1)
-		else 
-			iCity:SetNumRealBuilding(houseOfLordsFree,0)
 		end
 
 		--火电管理局
@@ -273,6 +269,13 @@ function QYConquestedCity(oldOwnerID, isCapital, cityX, cityY, newOwnerID)
 				Unit:SetHasPromotion(GameInfoTypes.PROMOTION_STATUE_OF_VICTORY,false)
 			end
 		end
+	end
+
+	--拥有贵族议会的城市被攻占，清除假政策
+	if capturedPlayer:HasPolicy(houseOfLordsPolicy)
+	and not capturedPlayer:HasBuilding(houseOfLords) then
+		debugPrint("拥有贵族议会的城市被攻占，清除假政策!")
+		capturedPlayer:SetHasPolicy(houseOfLordsPolicy,false)
 	end
 
 end
