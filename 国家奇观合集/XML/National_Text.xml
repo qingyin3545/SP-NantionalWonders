@@ -128,7 +128,7 @@
 			<Text>这个国家奇观会能够依据城市数量给整个国家提供全局加成，同时可以直接解锁政策代议制，大幅增强幅员辽阔的国家的国力，而尽早建造能够节省成本。</Text>
 		</Row>
 		<Row Tag="TXT_KEY_HOUSE_OF_LORDS_FREE">
-			<Text>+1%全局[ICON_RESEARCH][ICON_GOLD][ICON_PRODUCTION]</Text>
+			<Text>+1%全局[ICON_RESEARCH][ICON_GOLD][ICON_PEACE]</Text>
 		</Row>
 
 		<!--皇城司-->
