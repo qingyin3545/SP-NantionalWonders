@@ -35,6 +35,7 @@
 			<FriendlyLandsModifier>15</FriendlyLandsModifier>
 			<!--最大生命值加成-->
 			<MaxHitPointsModifier>10</MaxHitPointsModifier>
+			<ChangeDamageValue>-3</ChangeDamageValue>
 		</Row>
 	</UnitPromotions>
 

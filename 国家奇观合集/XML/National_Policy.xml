@@ -9,6 +9,12 @@
 			<Description>TXT_KEY_HOUSE_OF_LORDS_FREE</Description>
 		</Row>
 
+		<!--火电管理局-->
+		<Row>
+			<Type>POLICY_THERMAL_POWER_PLANNING_DEPARTMENT</Type>
+			<Description>TXT_KEY_POLICY_THERMAL_POWER_PLANNING_DEPARTMENT</Description>
+		</Row>
+
 		<!--工业规划部-->
 		<Row>
 			<Type>POLICY_INDUSTRIAL_PLANNING_DIVISION</Type>
@@ -56,6 +62,11 @@
 		<Row>
 			<PolicyType>POLICY_HOUSE_OF_LORDS_FREE</PolicyType>
 			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_HOUSE_OF_LORDS_FREE</PolicyType>
+			<YieldType>YIELD_HEALTH</YieldType>
 			<Yield>1</Yield>
 		</Row>
 	</Policy_CityNumberCityYieldModifier>

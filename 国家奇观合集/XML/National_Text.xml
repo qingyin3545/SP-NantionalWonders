@@ -10,7 +10,7 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_THERMAL_POWER_PLANNING_DEPARTMENT_HELP">
-			<Text>工业政策解锁，需要大型城市，建成之后燃煤发电站、燃煤发电扩容机组、燃油发电站、燃气发电站+1[ICON_HEALTH]健康度，所有燃气发电站不再产生全局[ICON_HEALTH]健康度惩罚并+2[ICON_RES_ELECTRICITY]电力，建造价格随城市数量增加。</Text>
+			<Text>工业政策解锁，需要大型城市，建成之后燃煤发电站、燃煤发电扩容机组、燃油发电站、燃气发电站带来的全局[ICON_DISEASE]疾病惩罚降低1/2且+1[ICON_HEALTH]健康度，燃气发电站+2[ICON_RES_ELECTRICITY]电力，建造价格随城市数量增加。</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_THERMAL_POWER_PLANNING_DEPARTMENT_PEDIA">
@@ -31,7 +31,7 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_INDUSTRIAL_PLANNING_DIVISION_HELP">
-			<Text>工业政策解锁，只能在[ICON_CAPITAL]首都建造且需要特大城市，建成之后前10座工厂、石油精炼厂、增殖反应堆、矿业公司+1%全局[ICON_HEALTH]健康度，所有工厂、石油精炼厂、增殖反应堆、矿业公司、电冶金厂+1[ICON_HEALTH]健康度，完全消除炼焦厂的全局[ICON_HEALTH]健康度惩罚、建造价格随城市数量增加。</Text>
+			<Text>工业政策解锁，只能在[ICON_CAPITAL]首都建造且需要特大城市，建成之后座工厂、石油精炼厂、增殖反应堆、矿业公司、电冶金厂、炼焦厂带来的全局[ICON_DISEASE]疾病惩罚降低1/3且+1[ICON_HEALTH]健康度，建造价格随城市数量增加。</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_INDUSTRIAL_PLANNING_DIVISION_PEDIA">
@@ -52,7 +52,7 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_NUCLEAR_POWER_MANAGEMENT_DEPARTMENT_HELP">
-			<Text>工业政策解锁，需要特大城市，建成之后使前10座核电站和核电扩容机组+1%全局[ICON_HEALTH]健康度，所有核电站、核电扩容机组、核聚变发电站、钍反应堆+3[ICON_PRODUCTION]产能，建造价格随城市数量增加。</Text>
+			<Text>工业政策解锁，需要特大城市，建成之后核电站和核电扩容机组-3%全局[ICON_DISEASE]疾病惩罚，所有核电站、核电扩容机组、核聚变发电站、钍反应堆+3[ICON_PRODUCTION]产能，建造价格随城市数量增加。</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_NUCLEAR_POWER_MANAGEMENT_DEPARTMENT_PEDIA">
@@ -67,11 +67,8 @@
 		</Row>
 
 		<!--国家规划假建筑-->
-		<Row Tag="TXT_KEY_NATIONAL_PLANNING_GLOBAL_HEALTH">
-			<Text>+2%[ICON_HEALTH]</Text>
-		</Row>
 		<Row Tag="TXT_KEY_NATIONAL_PLANNING_GLOBAL_HEALTH_ELECTRICITY">
-			<Text>+2%[ICON_HEALTH]+2[ICON_RES_ELECTRICITY]</Text>
+			<Text>+2[ICON_RES_ELECTRICITY]</Text>
 		</Row>
 		
 		<!--地月输电网络-->
@@ -81,7 +78,7 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_LUNAR_POWER_TRANSMISSION_HELP">
-			<Text>场理论解锁，需要巨型城市且建有月球基地。提供400单位[ICON_RES_ELECTRICITY]电力,大幅降低超高能耗奇观的[ICON_GOLD]金币消耗并抵消月球基地的[ICON_GOLD]金币消耗。</Text>
+			<Text>场理论解锁，需要巨型城市且建有月球基地。提供400单位[ICON_RES_ELECTRICITY]电力,大幅降低超高能耗奇观的[ICON_GOLD]金币消耗并抵消月球基地的[ICON_GOLD]金币消耗，每座[ICON_RES_ELECTRICITY]无损微波输电系统增加所在城市20%[ICON_PRODUCTION]产能、[ICON_GOLD]金钱。</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_LUNAR_POWER_TRANSMISSION_PEDIA">
@@ -117,7 +114,7 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_HOUSE_OF_LORDS_HELP">
-			<Text>需要自主，建成后全国每座城市+1%全局[ICON_RESEARCH]科研、[ICON_GOLD]金钱、[ICON_PEACE]信仰，赠送代议制，若已有代议制则免费获得一项社会政策。建造价格随城市数量增加。</Text>
+			<Text>需要自主，建成后全国每座城市+1%全局[ICON_RESEARCH]科研、[ICON_GOLD]金钱、[ICON_PEACE]信仰、[ICON_HEALTH]健康度，赠送代议制，若已有代议制则免费获得一项社会政策。建造价格随城市数量增加。</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_HOUSE_OF_LORDS_PEDIA">
@@ -138,7 +135,7 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_IMPERIAL_CITY_DEPARTMENT_HELP">
-			<Text>需要传统，只能在[ICON_CAPITAL]首都建造，建成后+5[ICON_HAPPINESS_1]全局快乐，[ICON_CAPITAL]首都每2人口+1[ICON_RESEARCH]科研、[ICON_CULTURE]文化、[ICON_GOLD]金钱、[ICON_FOOD]食物、[ICON_PRODUCTION]产能、[ICON_PEACE]信仰，首都出现2个自带105经验的近卫军。</Text>
+			<Text>需要传统，只能在[ICON_CAPITAL]首都建造，建成后+5[ICON_HAPPINESS_1]全局快乐，[ICON_CAPITAL]首都每2[ICON_CITIZEN]人口+1[ICON_RESEARCH]科研、[ICON_CULTURE]文化、[ICON_GOLD]金钱、[ICON_FOOD]食物、[ICON_PRODUCTION]产能、[ICON_PEACE]信仰，全国每10人口增加首都1点[ICON_HEALTH]健康度，首都出现2个带有额外105经验的近卫军。</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_IMPERIAL_CITY_DEPARTMENT_PEDIA">
@@ -156,7 +153,7 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_IMPERIAL_COLLEGE_OF_SUPERVISION_HELP">
-			<Text>教育学解锁，只能在[ICON_CAPITAL]首都建造，需要智慧，提供2个科学家槽位，建成后全国每20人口给本城提供1点[ICON_RESEARCH]科研、[ICON_CULTURE]文化产出，本城市每40点基础[ICON_RESEARCH]科研为本城提供+5%[ICON_PRODUCTION]产能、+5%[ICON_GOLD]金钱、以及+1%全局[ICON_HEALTH]健康度（最多叠加5次）。建造价格随城市数量增加。</Text>
+			<Text>教育学解锁，只能在[ICON_CAPITAL]首都建造，需要智慧，提供2个科学家槽位，建成后全国每20[ICON_CITIZEN]人口给本城提供1点[ICON_RESEARCH]科研、[ICON_CULTURE]文化产出，本城市每40点基础[ICON_RESEARCH]科研为本城提供+5%[ICON_PRODUCTION]产能、+5%[ICON_GOLD]金钱、并-2%全局[ICON_DISEASE]疾病影响（最多叠加5次）。建造价格随城市数量增加。</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_IMPERIAL_COLLEGE_OF_SUPERVISION_PEDIA">
@@ -167,7 +164,7 @@
 			<Text>这个国家奇观能够依据[ICON_CAPITAL]首都的科研产出为首都提供[ICON_PRODUCTION]产能、[ICON_GOLD]金钱以及[ICON_HEALTH]全局健康度，适合首都科研能力较强的国家。</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPERIAL_COLLEGE_OF_SUPERVISION_FREE">
-			<Text>本城+5%[ICON_PRODUCTION]+5%[ICON_GOLD]+1%[ICON_HEALTH]</Text>
+			<Text>国子监加成</Text>
 		</Row>
 		
 		<!--胜利女神像-->
@@ -177,7 +174,7 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_STATUE_OF_VICTORY_HELP">
-			<Text>需要宏伟，建成之后若处于[ICON_GOLDEN_AGE]黄金时代，每攻下一座敌国城市可使[ICON_GOLDEN_AGE]黄金时代延长1回合,若城市为初始[ICON_CAPITAL]首都，则延长三回合。步兵单位在[ICON_GOLDEN_AGE]黄金时代+15%[ICON_STRENGTH]战斗力。建造价格随城市数量增加。</Text>
+			<Text>需要宏伟，建成之后若处于[ICON_GOLDEN_AGE]黄金时代，每攻下一座敌国城市可使[ICON_GOLDEN_AGE]黄金时代延长1回合,若城市为初始[ICON_CAPITAL]首都，则延长三回合。若不处于黄金时代，获得和时代以及城市[ICON_CITIZEN]人口相关的[ICON_GOLDEN_AGE]黄金时代点数。步兵单位在[ICON_GOLDEN_AGE]黄金时代+15%[ICON_STRENGTH]战斗力。建造价格随城市数量增加。</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_STATUE_OF_VICTORY_PEDIA">
@@ -201,8 +198,8 @@
 			<Text>[ICON_IDEOLOGY_ORDER]红场</Text>
 		</Row>
 		<!-- Help tags -->
-		<Row Tag="TXT_KEY_ORDER_RED_SQUARE_HELP">[COLOR_NEGATIVE_TEXT]战斗机[ENDCOLOR]
-			<Text>[ICON_IDEOLOGY_ORDER]秩序专属国家奇观，只能在[ICON_CAPITAL]首都建造，军事单位购买价格-15%，所有陆军单位获得晋升[COLOR_NEGATIVE_TEXT]凛冬降临[ENDCOLOR]:+10生命值[ICON_HP]上限，复杂地形[ICON_STRENGTH]战斗力+15%，位于国境内作战[ICON_STRENGTH]战斗力+15%。</Text>
+		<Row Tag="TXT_KEY_ORDER_RED_SQUARE_HELP">
+			<Text>[ICON_IDEOLOGY_ORDER]秩序专属国家奇观，只能在[ICON_CAPITAL]首都建造，军事单位购买价格-15%，所有陆军单位获得晋升[COLOR_NEGATIVE_TEXT]凛冬降临[ENDCOLOR]:+10生命值[ICON_HP]上限，减少3点最终受到的伤害，复杂地形[ICON_STRENGTH]战斗力+15%，位于国境内作战[ICON_STRENGTH]战斗力+15%。</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_ORDER_RED_SQUARE_PEDIA">
@@ -217,7 +214,7 @@
 			<Text>凛冬降临</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_ORDER_RED_SQUARE_HELP">
-			<Text>+10生命值[ICON_HP]上限，复杂地形[ICON_STRENGTH]战斗力+15%，位于国境内作战[ICON_STRENGTH]战斗力+15%。</Text>
+			<Text>+10生命值[ICON_HP]上限，复杂地形[ICON_STRENGTH]战斗力+15%，减少3点最终受到的伤害,位于国境内作战[ICON_STRENGTH]战斗力+15%。</Text>
 		</Row>
 
 		<!--革命历史博物馆-->
@@ -321,4 +318,10 @@
 			<Text>独裁国家奇观国家党卫队赠送单位，自带快速学习、镇爆以及防暴部队晋升，能强力消除占领城市的抵抗回合数，同时该单位也比同时期步兵单位更加强大。</Text>
 		</Row>
 	</Language_en_US>
+	<Language_zh_CN>
+		<Update>
+				<Where Tag="TXT_KEY_BUILDING_INTELLIGENCE_AGENCY_HELP" />
+				<Set Text="额外提供一名间谍。[NEWLINE][NEWLINE]只能在中型城市（15人口）建造。文明的城市数量越多建造成本越高。" />
+		</Update>
+	</Language_zh_CN>
 </GameData>

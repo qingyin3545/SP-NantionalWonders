@@ -49,8 +49,14 @@ function QYNationalWonderCompletedDo(iPlayer, iCity, iBuilding, bGold, bFaithOrC
 	local isNationWonder = GameInfo.BuildingClasses[iBuildingClass].MaxPlayerInstances
 
 	if isNationWonder == 1 then
+		if iBuilding == thermalPowerDepartment then
+			debugPrint("玩家完成火电管理局")
+			if not pPlayer:HasPolicy(GameInfo.Policies["POLICY_THERMAL_POWER_PLANNING_DEPARTMENT"].ID) then 
+				pPlayer:SetHasPolicy(GameInfo.Policies["POLICY_THERMAL_POWER_PLANNING_DEPARTMENT"].ID,true,true)
+			end
+
 		--核电发展局
-		if iBuilding == nuclearDepartment then
+		elseif iBuilding == nuclearDepartment then
 			debugPrint("玩家完成核电发展局")
 			if not pPlayer:HasPolicy(GameInfo.Policies["POLICY_NUCLEAR_POWER_MANAGEMENT_DEPARTMENT"].ID) then 
 				pPlayer:SetHasPolicy(GameInfo.Policies["POLICY_NUCLEAR_POWER_MANAGEMENT_DEPARTMENT"].ID,true,true)
@@ -146,7 +152,6 @@ GameEvents.CityConstructed.Add(QYNationalWonderCompletedDo)
 
 --假建筑列表
 local thermalPowerDepartmentFree =  GameInfoTypes.BUILDING_NATIONAL_PLANNING_GLOBAL_HEALTH_ELECTRICITY
-local industrialDivisionFree = GameInfoTypes.BUILDING_NATIONAL_PLANNING_GLOBAL_HEALTH
 local imperialCollegeFree = GameInfoTypes.BUILDING_IMPERIAL_COLLEGE_OF_SUPERVISION_FREE
 --真建筑列表
 local gasPlant = GameInfoTypes.BUILDING_GAS_PLANT
@@ -180,13 +185,6 @@ function QYNationalWonderEffectDoEveryTurn(iPlayer)
 			iCity:SetNumRealBuilding(thermalPowerDepartmentFree,1)
 		else 
 			iCity:SetNumRealBuilding(thermalPowerDepartmentFree,0)
-		end
-
-		--工业规划部
-		if playerHasIPD and iCity:IsHasBuilding(coalCompany) then
-			iCity:SetNumRealBuilding(industrialDivisionFree,1)
-		else 
-			iCity:SetNumRealBuilding(industrialDivisionFree,0)
 		end
 
 		--国子监:根据城市科研梯度赠送不同数量的假建筑
@@ -254,6 +252,13 @@ function QYConquestedCity(oldOwnerID, isCapital, cityX, cityY, newOwnerID)
 			pPlayer:ChangeGoldenAgeTurns(1) 
 			if city:IsOriginalCapital() then
 				pPlayer:ChangeGoldenAgeTurns(2)
+			end
+		else
+			local GoldenAgeBonus = city:GetPopulation() * (pPlayer:GetCurrentEra() + 1) * 5
+			pPlayer:ChangeGoldenAgeProgressMeter(GoldenAgeBonus)
+			if pPlayer:IsHuman() then
+				local hex = ToHexFromGrid(Vector2(city:GetX(), city:GetY()))
+				Events.AddPopupTextEvent(HexToWorld(hex), Locale.ConvertTextKey("+{1_Num}[ICON_GOLDEN_AGE]", GoldenAgeBonus))
 			end
 		end 				
 	end

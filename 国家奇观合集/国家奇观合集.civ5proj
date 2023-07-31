@@ -5,7 +5,7 @@
     <ProjectGuid>{c22d6e0e-1bdc-453e-be3d-f2b83e158e88}</ProjectGuid>
     <Name>国家奇观合集</Name>
     <Guid>dbf853dc-999d-46c6-9216-d3dcff9192d2</Guid>
-    <ModVersion>5</ModVersion>
+    <ModVersion>6</ModVersion>
     <Stability>Alpha</Stability>
     <Teaser>主要添加了不同政策以及发电站有关的国家奇观。</Teaser>
     <Description>主要添加了不同政策以及发电站有关的国家奇观。</Description>
