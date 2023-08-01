@@ -343,9 +343,7 @@ function QYUnitCreated(iPlayer, iUnit, iUnitType, iPlotX, iPlotY)
 			local pCity = pUnit:GetPlot():GetPlotCity()
 			if pCity == nil then return end
 			if pCity:GetPlagueTurns() < 0 then
-				pCity:SetPlagueCounter(pCity:GetPlagueCounter() * 0.85)
-			elseif pCity:GetPlagueTurns() > 0 then
-				pCity:ChangePlagueTurns(-1)
+				pCity:SetPlagueCounter(pCity:GetPlagueCounter() * 0.8)
 			end
 		end
 	end

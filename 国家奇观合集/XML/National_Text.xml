@@ -393,12 +393,12 @@
 		<Row Tag="TXT_KEY_NATIONAL_MEDICAL_COLLEGE_HELP">
 			<Text>
 			[ICON_BULLET]需要小型城市，提供两个医学家席位，本城+15%[ICON_HEALTH]健康度且[ICON_GREAT_PEOPLE]大医学家点数积累速率+33%。
-			[NEWLINE][ICON_BULLET]医生诞生时城市若不处于[ICON_PLAGUE]瘟疫则立即减少15%瘟疫进度，若处于[ICON_PLAGUE]瘟疫则减少一回合瘟疫持续时间。
+			[NEWLINE][ICON_BULLET]医生诞生时城市若不处于[ICON_PLAGUE]瘟疫则立即减少20%瘟疫进度。
 			[NEWLINE][ICON_BULLET]大医学家诞生时所有城市若不处于[ICON_PLAGUE]瘟疫则立即减少15%瘟疫进度，若处于[ICON_PLAGUE]瘟疫则减少一回合瘟疫持续时间。
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NATIONAL_MEDICAL_COLLEGE_PEDIA">
-			<Text>阿斯克勒庇俄斯是希腊神话中阿波罗的儿子，医药之神。公元前7世纪到5世纪，希腊人民开始崇拜神医阿斯克勒庇俄斯。在小亚细亚的科斯岛和圣城，一批阿斯克勒庇俄斯的后代热衷于传播医术，开展医学教育，西方医学之父希波克拉底也是从小在这里学医。</Text>
+			<Text>医药之神阿斯克勒庇俄斯是希腊神话中阿波罗的儿子。公元前7世纪到5世纪，希腊人民开始崇拜神医阿斯克勒庇俄斯。在小亚细亚的科斯岛和圣城，一批阿斯克勒庇俄斯的后代热衷于传播医术，开展医学教育，西方医学之父希波克拉底也是从小在这里学医。</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NATIONAL_MEDICAL_COLLEGE_STRATEGY">
 			<Text>这个国家奇观能加快大医学家的诞生速度，并缓解帝国的健康度压力。</Text>
