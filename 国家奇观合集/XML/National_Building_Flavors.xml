@@ -194,6 +194,12 @@
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
 			<Flavor>50</Flavor>
 		</Row>
+		<!--国立医学院-->
+		<Row>
+			<BuildingType>BUILDING_NATIONAL_MEDICAL_COLLEGE</BuildingType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>999</Flavor>
+		</Row>
 	</Building_Flavors>
   
 </GameData>

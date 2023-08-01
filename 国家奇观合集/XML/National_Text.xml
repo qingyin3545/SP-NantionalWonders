@@ -10,7 +10,12 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_THERMAL_POWER_PLANNING_DEPARTMENT_HELP">
-			<Text>工业政策解锁，需要大型城市，建成之后燃煤发电站、燃煤发电扩容机组、燃油发电站、燃气发电站带来的全局[ICON_DISEASE]疾病惩罚降低1/2且+1[ICON_HEALTH]健康度，燃气发电站+2[ICON_RES_ELECTRICITY]电力，建造价格随城市数量增加。</Text>
+			<Text>
+			[ICON_BULLET]工业政策解锁，需要大型城市。
+			[NEWLINE][ICON_BULLET]燃煤发电站、燃煤发电扩容机组、燃油发电站、燃气发电站带来的全局[ICON_DISEASE]疾病惩罚降低1/2且+1[ICON_HEALTH]健康度。
+			[NEWLINE][ICON_BULLET]燃气发电站+2[ICON_RES_ELECTRICITY]电力。
+			[NEWLINE][ICON_BULLET]建造价格随城市数量增加。
+			</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_THERMAL_POWER_PLANNING_DEPARTMENT_PEDIA">
@@ -31,7 +36,11 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_INDUSTRIAL_PLANNING_DIVISION_HELP">
-			<Text>工业政策解锁，只能在[ICON_CAPITAL]首都建造且需要特大城市，建成之后座工厂、石油精炼厂、增殖反应堆、矿业公司、电冶金厂、炼焦厂带来的全局[ICON_DISEASE]疾病惩罚降低1/3且+1[ICON_HEALTH]健康度，建造价格随城市数量增加。</Text>
+			<Text>
+			[ICON_BULLET]工业政策解锁，只能在[ICON_CAPITAL]首都建造且需要特大城市。
+			[NEWLINE][ICON_BULLET]所有工厂、石油精炼厂、增殖反应堆、矿业公司、电冶金厂、炼焦厂带来的全局[ICON_DISEASE]疾病惩罚降低1/3且+1[ICON_HEALTH]健康度。
+			[NEWLINE][ICON_BULLET]建造价格随城市数量增加。
+			</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_INDUSTRIAL_PLANNING_DIVISION_PEDIA">
@@ -52,7 +61,12 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_NUCLEAR_POWER_MANAGEMENT_DEPARTMENT_HELP">
-			<Text>工业政策解锁，需要特大城市，建成之后核电站和核电扩容机组-3%全局[ICON_DISEASE]疾病惩罚，所有核电站、核电扩容机组、核聚变发电站、钍反应堆+3[ICON_PRODUCTION]产能，建造价格随城市数量增加。</Text>
+			<Text>
+			[ICON_BULLET]工业政策解锁，需要特大城市。
+			[NEWLINE][ICON_BULLET]核电站和核电扩容机组-3%全局[ICON_DISEASE]疾病惩罚。
+			[NEWLINE][ICON_BULLET]所有核电站、核电扩容机组、核聚变发电站、钍反应堆+3[ICON_PRODUCTION]产能。
+			[NEWLINE][ICON_BULLET]建造价格随城市数量增加。
+			</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_NUCLEAR_POWER_MANAGEMENT_DEPARTMENT_PEDIA">
@@ -78,7 +92,12 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_LUNAR_POWER_TRANSMISSION_HELP">
-			<Text>场理论解锁，需要巨型城市且建有月球基地。提供400单位[ICON_RES_ELECTRICITY]电力,大幅降低超高能耗奇观的[ICON_GOLD]金币消耗并抵消月球基地的[ICON_GOLD]金币消耗，每座[ICON_RES_ELECTRICITY]无损微波输电系统增加所在城市20%[ICON_PRODUCTION]产能、[ICON_GOLD]金钱。</Text>
+			<Text>
+			[ICON_BULLET]需要巨型城市且建有月球基地。
+			[NEWLINE][ICON_BULLET]提供400单位[ICON_RES_ELECTRICITY]电力。
+			[NEWLINE][ICON_BULLET]大幅降低超高能耗奇观的[ICON_GOLD]金币消耗并抵消月球基地的[ICON_GOLD]金币消耗。
+			[NEWLINE][ICON_BULLET]每座[ICON_RES_ELECTRICITY]无损微波输电系统增加所在城市20%[ICON_PRODUCTION]产能、[ICON_GOLD]金钱。
+			</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_LUNAR_POWER_TRANSMISSION_PEDIA">
@@ -96,7 +115,12 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_HOLY_SHIELD_SYSTEM_HELP">
-			<Text>超结构解锁，需要大都会且建有阿玛塞尔纤维。建成后本城市完全免疫核打击，城市攻击范围拓展至8格，大幅增加城市每回合恢复的生命值[ICON_HP]。所有城市防御效率提升50%。全国境内敌方陆军单位在任何地块额外消耗1[ICON_MOVES]移动力。</Text>
+			<Text>
+			[ICON_BULLET]需要大都会且建有阿玛塞尔纤维。
+			[NEWLINE][ICON_BULLET]本城市完全免疫核打击，城市攻击范围拓展至8格，大幅增加城市每回合恢复的生命值[ICON_HP]。
+			[NEWLINE][ICON_BULLET]所有城市防御效率提升50%。
+			[NEWLINE][ICON_BULLET]全国境内敌方陆军单位在任何地块额外消耗1[ICON_MOVES]移动力。
+			</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_HOLY_SHIELD_SYSTEM_PEDIA">
@@ -114,7 +138,12 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_HOUSE_OF_LORDS_HELP">
-			<Text>需要自主，建成后全国每座城市+1%全局[ICON_RESEARCH]科研、[ICON_GOLD]金钱、[ICON_PEACE]信仰、[ICON_HEALTH]健康度，赠送代议制，若已有代议制则免费获得一项社会政策。建造价格随城市数量增加。</Text>
+			<Text>
+			[ICON_BULLET]需要自主。
+			[NEWLINE][ICON_BULLET]全国每座城市+1%全局[ICON_RESEARCH]科研、[ICON_GOLD]金钱、[ICON_PEACE]信仰、[ICON_HEALTH]健康度。
+			[NEWLINE][ICON_BULLET]赠送代议制，若已有代议制则免费获得一项社会政策。
+			[NEWLINE][ICON_BULLET]建造价格随城市数量增加。
+			</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_HOUSE_OF_LORDS_PEDIA">
@@ -135,7 +164,12 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_IMPERIAL_CITY_DEPARTMENT_HELP">
-			<Text>需要传统，只能在[ICON_CAPITAL]首都建造，建成后+5[ICON_HAPPINESS_1]全局快乐，[ICON_CAPITAL]首都每2[ICON_CITIZEN]人口+1[ICON_RESEARCH]科研、[ICON_CULTURE]文化、[ICON_GOLD]金钱、[ICON_FOOD]食物、[ICON_PRODUCTION]产能、[ICON_PEACE]信仰，全国每10人口增加首都1点[ICON_HEALTH]健康度，首都出现2个带有额外105经验的近卫军。</Text>
+			<Text>
+			[ICON_BULLET]需要传统，只能在[ICON_CAPITAL]首都建造。
+			[NEWLINE][ICON_BULLET]+5[ICON_HAPPINESS_1]全局快乐，全国每10人口增加首都1点[ICON_HEALTH]健康度。
+			[NEWLINE][ICON_BULLET][ICON_CAPITAL]首都每2[ICON_CITIZEN]人口+1[ICON_RESEARCH]科研、[ICON_CULTURE]文化、[ICON_GOLD]金钱、[ICON_FOOD]食物、[ICON_PRODUCTION]产能、[ICON_PEACE]信仰。
+			[NEWLINE][ICON_BULLET]首都出现2个带有额外105经验的近卫军。
+			</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_IMPERIAL_CITY_DEPARTMENT_PEDIA">
@@ -153,7 +187,13 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_IMPERIAL_COLLEGE_OF_SUPERVISION_HELP">
-			<Text>教育学解锁，只能在[ICON_CAPITAL]首都建造，需要智慧，提供2个科学家槽位，建成后全国每20[ICON_CITIZEN]人口给本城提供1点[ICON_RESEARCH]科研、[ICON_CULTURE]文化产出，本城市每40点基础[ICON_RESEARCH]科研为本城提供+5%[ICON_PRODUCTION]产能、+5%[ICON_GOLD]金钱、并-2%全局[ICON_DISEASE]疾病影响（最多叠加5次）。建造价格随城市数量增加。</Text>
+			<Text>
+			[ICON_BULLET]需要智慧，只能在[ICON_CAPITAL]首都建造。
+			[NEWLINE][ICON_BULLET]+2个科学家席位，本城市大文学家、大科学家积累速率+15%。
+			[NEWLINE][ICON_BULLET]全国每20[ICON_CITIZEN]人口为本城提供1点[ICON_RESEARCH]科研、[ICON_CULTURE]文化产出。
+			[NEWLINE][ICON_BULLET]本城市每40点基础[ICON_RESEARCH]科研为全国+3%[ICON_PRODUCTION]产能、+3%[ICON_GOLD]金钱、并-2%全局[ICON_DISEASE]疾病影响（最多叠加5次）。
+			[NEWLINE][ICON_BULLET]建造价格随城市数量增加。
+			</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_IMPERIAL_COLLEGE_OF_SUPERVISION_PEDIA">
@@ -161,7 +201,7 @@
 		</Row>
 		<!-- Strategy tags -->
 		<Row Tag="TXT_KEY_IMPERIAL_COLLEGE_OF_SUPERVISION_STRATEGY">
-			<Text>这个国家奇观能够依据[ICON_CAPITAL]首都的科研产出为首都提供[ICON_PRODUCTION]产能、[ICON_GOLD]金钱以及[ICON_HEALTH]全局健康度，适合首都科研能力较强的国家。</Text>
+			<Text>这个国家奇观能够依据[ICON_CAPITAL]首都的科研产出为全国提供[ICON_PRODUCTION]产能、[ICON_GOLD]金钱以及降低全局[ICON_DISEASE]疾病影响，适合首都科研能力较强的国家。</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPERIAL_COLLEGE_OF_SUPERVISION_FREE">
 			<Text>国子监加成</Text>
@@ -174,7 +214,13 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_STATUE_OF_VICTORY_HELP">
-			<Text>需要宏伟，建成之后若处于[ICON_GOLDEN_AGE]黄金时代，每攻下一座敌国城市可使[ICON_GOLDEN_AGE]黄金时代延长1回合,若城市为初始[ICON_CAPITAL]首都，则延长三回合。若不处于黄金时代，获得和时代以及城市[ICON_CITIZEN]人口相关的[ICON_GOLDEN_AGE]黄金时代点数。步兵单位在[ICON_GOLDEN_AGE]黄金时代+15%[ICON_STRENGTH]战斗力。建造价格随城市数量增加。</Text>
+			<Text>
+			[ICON_BULLET]需要宏伟。
+			[NEWLINE][ICON_BULLET]若处于[ICON_GOLDEN_AGE]黄金时代，每攻下一座敌国城市可使[ICON_GOLDEN_AGE]黄金时代延长1回合,若城市为初始[ICON_CAPITAL]首都，则延长三回合。
+			[NEWLINE][ICON_BULLET]若不处于黄金时代，获得和时代以及城市[ICON_CITIZEN]人口相关的[ICON_GOLDEN_AGE]黄金时代点数。
+			[NEWLINE][ICON_BULLET]步兵单位在[ICON_GOLDEN_AGE]黄金时代+15%[ICON_STRENGTH]战斗力。
+			[NEWLINE][ICON_BULLET]建造价格随城市数量增加。
+			</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_STATUE_OF_VICTORY_PEDIA">
@@ -199,7 +245,11 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_ORDER_RED_SQUARE_HELP">
-			<Text>[ICON_IDEOLOGY_ORDER]秩序专属国家奇观，只能在[ICON_CAPITAL]首都建造，军事单位购买价格-15%，所有陆军单位获得晋升[COLOR_NEGATIVE_TEXT]凛冬降临[ENDCOLOR]:+10生命值[ICON_HP]上限，减少3点最终受到的伤害，复杂地形[ICON_STRENGTH]战斗力+15%，位于国境内作战[ICON_STRENGTH]战斗力+15%。</Text>
+			<Text>
+			[ICON_BULLET]需要[ICON_IDEOLOGY_ORDER]秩序，只能在[ICON_CAPITAL]首都建造。
+			[NEWLINE][ICON_BULLET]军事单位购买价格-15%。
+			[NEWLINE][ICON_BULLET]所有陆军单位获得晋升[COLOR_NEGATIVE_TEXT]凛冬降临[ENDCOLOR]:+10生命值[ICON_HP]上限，减少3点最终受到的伤害，复杂地形[ICON_STRENGTH]战斗力+15%，位于国境内作战[ICON_STRENGTH]战斗力+15%。
+			</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_ORDER_RED_SQUARE_PEDIA">
@@ -224,7 +274,11 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_ORDER_MUSEUM_OF_REVOLUTIONARY_HISTORY_HELP">
-			<Text>[ICON_IDEOLOGY_ORDER]秩序专属国家奇观，需要大型城市，全国+20%[ICON_GREAT_PEOPLE]伟人点数累积。所有城市完成奇观后获得奇观[ICON_PRODUCTION]产能要求相关的一次项[ICON_RESEARCH]科研、[ICON_PEACE]信仰产出。</Text>
+			<Text>
+			[ICON_BULLET]需要[ICON_IDEOLOGY_ORDER]秩序，只能在大型城市建造。
+			[NEWLINE][ICON_BULLET]全国+20%[ICON_GREAT_PEOPLE]伟人点数累积。
+			[NEWLINE][ICON_BULLET]所有城市完成奇观后获得奇观[ICON_PRODUCTION]产能要求相关的一次项[ICON_RESEARCH]科研、[ICON_PEACE]信仰产出。
+			</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_ORDER_MUSEUM_OF_REVOLUTIONARY_HISTORY_PEDIA">
@@ -242,7 +296,10 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_FREEDOM_BUCKINGHAM_PALACE_HELP">
-			<Text>[ICON_IDEOLOGY_FREEDOM]自由专属国家奇观，需要特大城市，只能在[ICON_CAPITAL]首都建造，每回合你的每座傀儡城市为你提供所处时代相关的一次性[ICON_GOLD]金钱、[ICON_CULTURE]文化产出。</Text>
+			<Text>
+			[ICON_BULLET]需要[ICON_IDEOLOGY_FREEDOM]自由，只能在特大城市建造，要求[ICON_CAPITAL]首都。
+			[NEWLINE][ICON_BULLET]每回合你的每座傀儡城市为你提供所处时代相关的一次性[ICON_GOLD]金钱、[ICON_CULTURE]文化产出。
+			</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_FREEDOM_BUCKINGHAM_PALACE_PEDIA">
@@ -263,7 +320,10 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_FREEDOM_LINCOLN_MEMORIAL_HELP">
-			<Text>[ICON_IDEOLOGY_FREEDOM]自由专属国家奇观，需要特大城市，每座直辖城市为本城提供时代相关的一次性[ICON_PRODUCTION]产能。</Text>
+			<Text>
+			[ICON_BULLET]需要[ICON_IDEOLOGY_FREEDOM]自由，只能在特大城市建造。
+			[NEWLINE][ICON_BULLET]每回合你的每座直辖城市为本城提供时代相关的一次性[ICON_PRODUCTION]产能。
+			</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_FREEDOM_LINCOLN_MEMORIAL_PEDIA">
@@ -284,7 +344,11 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_AUTOCRACY_ASSEMBLY_GROUND_HELP">
-			<Text>[ICON_IDEOLOGY_AUTOCRACY]独裁专属国家奇观，全局[ICON_HAPPINESS_4]不满-8%，全国建造军事单位+20%[ICON_PRODUCTION]产能积累</Text>
+			<Text>
+			[ICON_BULLET]需要[ICON_IDEOLOGY_AUTOCRACY]独裁。
+			[NEWLINE][ICON_BULLET]全局[ICON_HAPPINESS_4]不满-8%，
+			[NEWLINE][ICON_BULLET]全国建造军事单位+20%[ICON_PRODUCTION]产能积累
+			</Text>
 		</Row>
 		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_AUTOCRACY_ASSEMBLY_GROUND_PEDIA">
@@ -302,7 +366,11 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_AUTOCRACY_SCHUTZSTAFFEL_HELP">
-			<Text>[ICON_IDEOLOGY_AUTOCRACY]独裁专属国家奇观，+5[ICON_HAPPINESS_1]全局快乐，立即获得4个[COLOR_POSITIVE_TEXT]精锐[ENDCOLOR][COLOR_NEGATIVE_TEXT]武装党卫军[ENDCOLOR]。</Text>
+			<Text>
+			[ICON_BULLET]需要[ICON_IDEOLOGY_AUTOCRACY]独裁。
+			[NEWLINE][ICON_BULLET]+5[ICON_HAPPINESS_1]全局快乐。
+			[NEWLINE][ICON_BULLET]立即获得4个[COLOR_POSITIVE_TEXT]精锐[ENDCOLOR][COLOR_NEGATIVE_TEXT]武装党卫军[ENDCOLOR]。
+			</Text>
 		</Row>
 		<!-- Strategy tags -->
 		<Row Tag="TXT_KEY_AUTOCRACY_SCHUTZSTAFFEL_STRATEGY">
@@ -317,6 +385,25 @@
 		<Row Tag="TXT_KEY_UNIT_GERMAN_WAFFEN_SS_HELP">
 			<Text>独裁国家奇观国家党卫队赠送单位，自带快速学习、镇爆以及防暴部队晋升，能强力消除占领城市的抵抗回合数，同时该单位也比同时期步兵单位更加强大。</Text>
 		</Row>
+
+		<!--国立医学院-->
+		<Row Tag="TXT_KEY_NATIONAL_MEDICAL_COLLEGE">
+			<Text>国立医学院</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATIONAL_MEDICAL_COLLEGE_HELP">
+			<Text>
+			[ICON_BULLET]需要小型城市，提供两个医学家席位，本城+15%[ICON_HEALTH]健康度且[ICON_GREAT_PEOPLE]大医学家点数积累速率+33%。
+			[NEWLINE][ICON_BULLET]医生诞生时城市若不处于[ICON_PLAGUE]瘟疫则立即减少15%瘟疫进度，若处于[ICON_PLAGUE]瘟疫则减少一回合瘟疫持续时间。
+			[NEWLINE][ICON_BULLET]大医学家诞生时所有城市若不处于[ICON_PLAGUE]瘟疫则立即减少15%瘟疫进度，若处于[ICON_PLAGUE]瘟疫则减少一回合瘟疫持续时间。
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATIONAL_MEDICAL_COLLEGE_PEDIA">
+			<Text>阿斯克勒庇俄斯是希腊神话中阿波罗的儿子，医药之神。公元前7世纪到5世纪，希腊人民开始崇拜神医阿斯克勒庇俄斯。在小亚细亚的科斯岛和圣城，一批阿斯克勒庇俄斯的后代热衷于传播医术，开展医学教育，西方医学之父希波克拉底也是从小在这里学医。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATIONAL_MEDICAL_COLLEGE_STRATEGY">
+			<Text>这个国家奇观能加快大医学家的诞生速度，并缓解帝国的健康度压力。</Text>
+		</Row>
+
 	</Language_en_US>
 	<Language_zh_CN>
 		<Update>

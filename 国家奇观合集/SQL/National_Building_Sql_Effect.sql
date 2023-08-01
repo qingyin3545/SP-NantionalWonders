@@ -2,7 +2,7 @@
 UPDATE SPTriggerControler SET Enabled = 1 WHERE TriggerType = 'Minor_Building_Overrides_Trigger';
 
 --国家情报局不再需要赞助开门，且要求降低至中型城市
-UPDATE Buildings SET PolicyBranchType = NULL WHERE Type = 'POLICY_BRANCH_PATRONAGE';
+UPDATE Buildings SET PolicyBranchType = NULL WHERE Type = 'BUILDING_INTELLIGENCE_AGENCY';
 UPDATE Building_ClassesNeededInCity SET BuildingClassType = 'BUILDINGCLASS_CITY_SIZE_MEDIUM' WHERE BuildingType = 'BUILDING_INTELLIGENCE_AGENCY';
 
 INSERT INTO Building_BuildingClassYieldChanges(BuildingType , BuildingClassType , YieldType , YieldChange)

@@ -10,19 +10,24 @@
 			<YieldType>YIELD_DISEASE</YieldType>
 			<Yield>-2</Yield>
 		</Row>
+		<Row>
+			<BuildingType>BUILDING_IMPERIAL_COLLEGE_OF_SUPERVISION_FREE</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>3</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_IMPERIAL_COLLEGE_OF_SUPERVISION_FREE</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>3</Yield>
+		</Row>
 	</Building_GlobalYieldModifiers>
 
 	<!--建筑本城百分比产出-->
 	<Building_YieldModifiers>
 		<Row>
-			<BuildingType>BUILDING_IMPERIAL_COLLEGE_OF_SUPERVISION_FREE</BuildingType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>5</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_IMPERIAL_COLLEGE_OF_SUPERVISION_FREE</BuildingType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>5</Yield>
+			<BuildingType>BUILDING_NATIONAL_MEDICAL_COLLEGE</BuildingType>
+			<YieldType>YIELD_HEALTH</YieldType>
+			<Yield>15</Yield>
 		</Row>
 	</Building_YieldModifiers>
 
@@ -97,11 +102,6 @@
 		<!--国子监-->
 		<Row>
 			<BuildingType>BUILDING_IMPERIAL_COLLEGE_OF_SUPERVISION</BuildingType>
-			<YieldType>YIELD_HEALTH</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_IMPERIAL_COLLEGE_OF_SUPERVISION</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<Yield>3</Yield>
 		</Row>
@@ -109,6 +109,12 @@
 			<BuildingType>BUILDING_IMPERIAL_COLLEGE_OF_SUPERVISION</BuildingType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>3</Yield>
+		</Row>
+		<!--国立医学院-->
+		<Row>
+			<BuildingType>BUILDING_NATIONAL_MEDICAL_COLLEGE</BuildingType>
+			<YieldType>YIELD_HEALTH</YieldType>
+			<Yield>5</Yield>
 		</Row>
 	</Building_YieldChanges>
 	
@@ -172,6 +178,25 @@
 			<Quantity>2</Quantity>
 		</Row>
 	</Building_ResourceQuantity>
+
+	<!--建筑对本地专家加成-->
+	<Building_SpecificGreatPersonRateModifier>
+		<Row>
+			<BuildingType>BUILDING_IMPERIAL_COLLEGE_OF_SUPERVISION</BuildingType>
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<Modifier>15</Modifier>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_IMPERIAL_COLLEGE_OF_SUPERVISION</BuildingType>
+			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
+			<Modifier>15</Modifier>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_NATIONAL_MEDICAL_COLLEGE</BuildingType>
+			<SpecialistType>SPECIALIST_DOCTOR</SpecialistType>
+			<Modifier>33</Modifier>
+		</Row>
+	</Building_SpecificGreatPersonRateModifier>
 	
 
 </GameData>

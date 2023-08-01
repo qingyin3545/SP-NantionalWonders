@@ -389,6 +389,30 @@
 			<PolicyBranchType>POLICY_BRANCH_AUTOCRACY</PolicyBranchType>
 		</Row>
 		
+		<Row>
+			<!--国立医学院-->
+			<Type>BUILDING_NATIONAL_MEDICAL_COLLEGE</Type>
+			<BuildingClass>BUILDINGCLASS_NATIONAL_MEDICAL_COLLEGE</BuildingClass>
+			<Cost>300</Cost>
+			<!--前置科技植物医学-->
+			<PrereqTech>TECH_NATURAL_MEDICINE</PrereqTech>
+			<Help>TXT_KEY_NATIONAL_MEDICAL_COLLEGE_HELP</Help>
+			<Description>TXT_KEY_NATIONAL_MEDICAL_COLLEGE</Description>
+			<Civilopedia>TXT_KEY_NATIONAL_MEDICAL_COLLEGE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_NATIONAL_MEDICAL_COLLEGE_STRATEGY</Strategy>
+			<NukeImmune>true</NukeImmune>
+			<!--每座城市增加成本-->
+			<NumCityCostMod>5</NumCityCostMod>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<MinAreaSize>-1</MinAreaSize>
+			<NeverCapture>true</NeverCapture>
+			<IconAtlas>NationalPlanning_ATLAS</IconAtlas>
+			<PortraitIndex>18</PortraitIndex>
+			<!--医学家槽-->
+			<SpecialistType>SPECIALIST_DOCTOR</SpecialistType>
+			<SpecialistCount>2</SpecialistCount>
+		</Row>
+		
 	</Buildings>
 
 	<!--前置建筑-->
@@ -468,6 +492,12 @@
 		<Row>
 			<BuildingType>BUILDING_ORDER_MUSEUM_OF_REVOLUTIONARY_HISTORY</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_LARGE</BuildingClassType>
+		</Row>
+
+		<!--国立医学院前置小型城市-->
+		<Row>
+			<BuildingType>BUILDING_NATIONAL_MEDICAL_COLLEGE</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_SMALL</BuildingClassType>
 		</Row>
 	</Building_ClassesNeededInCity>
 

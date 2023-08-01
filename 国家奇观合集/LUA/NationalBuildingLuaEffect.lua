@@ -312,4 +312,44 @@ function QYCityCanConstruct(iPlayer, iCity, iBuilding)
  end
 GameEvents.CityCanConstruct.Add(QYCityCanConstruct)
 
+local NationalMedicalCollege = GameInfoTypes.BUILDING_NATIONAL_MEDICAL_COLLEGE
+local EralyDoctor = GameInfoTypes.UNITCLASS_ERALY_DOCTOR
+local ModernDoctor = GameInfoTypes.UNITCLASS_MODERN_DOCTOR
+local GreatDoctor = GameInfoTypes.UNITCLASS_GREAT_DOCTOR
+function QYUnitCreated(iPlayer, iUnit, iUnitType, iPlotX, iPlotY)
+    local pPlayer = Players[iPlayer]
+	if pPlayer == nil or not pPlayer:IsMajorCiv() then return end
+    local pUnit = pPlayer:GetUnitByID(iUnit)
+    if pUnit == nil then return end
+
+	local pUnitClass = pUnit:GetUnitClassType()
+	if pUnitClass == GreatDoctor
+    then
+		if pPlayer:HasBuilding(NationalMedicalCollege) then
+			debugPrint("拥有国家医学院且大医诞生!")
+			for iCity in pPlayer:Cities() do
+				if iCity:GetPlagueTurns() < 0 then
+					iCity:SetPlagueCounter(iCity:GetPlagueCounter() * 0.85)
+				elseif iCity:GetPlagueTurns() > 0 then
+					iCity:ChangePlagueTurns(-1)
+				end
+			end
+		end
+	
+	elseif pUnitClass == EralyDoctor or pUnitClass == ModernDoctor
+	then
+		if pPlayer:HasBuilding(NationalMedicalCollege) then
+			debugPrint("拥有国家医学院且医生诞生!")
+			local pCity = pUnit:GetPlot():GetPlotCity()
+			if pCity == nil then return end
+			if pCity:GetPlagueTurns() < 0 then
+				pCity:SetPlagueCounter(pCity:GetPlagueCounter() * 0.85)
+			elseif pCity:GetPlagueTurns() > 0 then
+				pCity:ChangePlagueTurns(-1)
+			end
+		end
+	end
+end
+GameEvents.UnitCreated.Add(QYUnitCreated)
+
 print("National Buildings Lua Effect Check Pass !")

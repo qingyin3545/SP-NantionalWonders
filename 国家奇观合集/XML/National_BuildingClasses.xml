@@ -130,5 +130,13 @@
 			<Description>TXT_KEY_AUTOCRACY_ASSEMBLY_GROUND</Description>
 			<MaxPlayerInstances>1</MaxPlayerInstances>
 		</Row>
+
+		<!--国立医学院-->
+		<Row>
+			<Type>BUILDINGCLASS_NATIONAL_MEDICAL_COLLEGE</Type>
+			<DefaultBuilding>BUILDING_NATIONAL_MEDICAL_COLLEGE</DefaultBuilding>
+			<Description>TXT_KEY_NATIONAL_MEDICAL_COLLEGE</Description>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
 	</BuildingClasses>
 </GameData>
