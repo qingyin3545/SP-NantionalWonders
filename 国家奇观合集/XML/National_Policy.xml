@@ -44,6 +44,14 @@
 			<Description>TXT_KEY_ORDER_RED_SQUARE</Description>
 			<UnitPurchaseCostModifier>-15</UnitPurchaseCostModifier>
 		</Row>
+
+		<!--西海都护府-->
+		<Row>
+			<Type>POLICY_XIHAI_REGIONS_FRONTIER_COMMAND</Type>
+			<Description>TXT_KEY_XIHAI_REGIONS_FRONTIER_COMMAND</Description>
+			<MilitaryUnitGiftExtraInfluence>3</MilitaryUnitGiftExtraInfluence>
+			<CityStateUnitFrequencyModifier>100</CityStateUnitFrequencyModifier>
+		</Row>
 		
 	</Policies>
 

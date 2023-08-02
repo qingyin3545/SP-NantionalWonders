@@ -32,12 +32,16 @@ local Schutzstaffel = GameInfoTypes["BUILDING_AUTOCRACY_SCHUTZSTAFFEL"]
 local assemblyGround = GameInfoTypes["BUILDING_AUTOCRACY_ASSEMBLY_GROUND"]
 --红场
 local redSquare = GameInfoTypes["BUILDING_ORDER_RED_SQUARE"]
+local redSquarePolicy = GameInfoTypes["POLICY_ORDER_RED_SQUARE"]
 --革命历史博物馆
 local museumOfRevolution = GameInfoTypes["BUILDING_ORDER_MUSEUM_OF_REVOLUTIONARY_HISTORY"]
 --白金汉宫
 local buckinghamPalace = GameInfoTypes["BUILDING_FREEDOM_BUCKINGHAM_PALACE"]
 --解放纪念堂
 local lincolnMemorial = GameInfoTypes["BUILDING_FREEDOM_LINCOLN_MEMORIAL"]
+--西海都护府
+local XiHai = GameInfoTypes["BUILDING_XIHAI_REGIONS_FRONTIER_COMMAND"]
+local XiHaiPolicy = GameInfoTypes["POLICY_XIHAI_REGIONS_FRONTIER_COMMAND"]
 
 
 function QYNationalWonderCompletedDo(iPlayer, iCity, iBuilding, bGold, bFaithOrCulture)
@@ -124,8 +128,15 @@ function QYNationalWonderCompletedDo(iPlayer, iCity, iBuilding, bGold, bFaithOrC
 		--红场
 		elseif iBuilding == redSquare then
 			debugPrint("玩家完成红场")
-			if not pPlayer:HasPolicy(GameInfo.Policies["POLICY_ORDER_RED_SQUARE"].ID) then 
-				pPlayer:SetHasPolicy(GameInfo.Policies["POLICY_ORDER_RED_SQUARE"].ID,true,true)	
+			if not pPlayer:HasPolicy(redSquarePolicy) then 
+				pPlayer:SetHasPolicy(redSquarePolicy,true,true)	
+			end
+		
+		--西海都护府
+		elseif iBuilding == XiHai then
+			debugPrint("玩家完成西海都护府")
+			if not pPlayer:HasPolicy(XiHaiPolicy) then 
+				pPlayer:SetHasPolicy(XiHaiPolicy,true,true)	
 			end
 		end
 	end
@@ -283,6 +294,20 @@ function QYConquestedCity(oldOwnerID, isCapital, cityX, cityY, newOwnerID)
 		capturedPlayer:SetHasPolicy(houseOfLordsPolicy,false)
 	end
 
+	--拥有红场的城市被攻占，清除假政策
+	if capturedPlayer:HasPolicy(redSquarePolicy)
+	and not capturedPlayer:HasBuilding(redSquare) then
+		debugPrint("拥有红场的城市被攻占，清除假政策!")
+		capturedPlayer:SetHasPolicy(redSquarePolicy,false)
+	end
+
+	--拥有西海都护府的城市被攻占，清除假政策
+	if capturedPlayer:HasPolicy(XiHaiPolicy)
+	and not capturedPlayer:HasBuilding(XiHai) then
+		debugPrint("拥有西海都护府的城市被攻占，清除假政策!")
+		capturedPlayer:SetHasPolicy(XiHaiPolicy,false)
+	end
+
 end
 GameEvents.CityCaptureComplete.Add(QYConquestedCity) --夺城生效
 
@@ -349,5 +374,26 @@ function QYUnitCreated(iPlayer, iUnit, iUnitType, iPlotX, iPlotY)
 	end
 end
 GameEvents.UnitCreated.Add(QYUnitCreated)
+
+function QYCompletedQuest(iMajor, iMinor, iQuestType, iStartTurn, iOldInfluence, iNewInfluence)
+    local pPlayer = Players[iMajor]
+	local MinorPlayer= Players[iMinor]
+	if pPlayer == nil or MinorPlayer == nil or not pPlayer:IsMajorCiv() then return end
+	if iNewInfluence > iOldInfluence 
+	and pPlayer:HasBuilding(XiHai) 
+	then
+		debugPrint("玩家拥有西海都护府并完成任务!")
+		for i=0, GameDefines.MAX_MAJOR_CIVS-1, 1 do
+			local iPlayer = Players[i]
+			if iPlayer:IsAlive() and iPlayer:IsMajorCiv()
+			and not iPlayer:HasBuilding(XiHai)
+			and MinorPlayer:GetMinorCivFriendshipWithMajor(i) > 0
+			then
+				MinorPlayer:ChangeMinorCivFriendshipWithMajor(i,-MinorPlayer:GetMinorCivFriendshipWithMajor(i) * 0.15) 
+			end
+		end
+	end
+end
+GameEvents.PlayerCompletedQuest.Add(QYCompletedQuest) 
 
 print("National Buildings Lua Effect Check Pass !")

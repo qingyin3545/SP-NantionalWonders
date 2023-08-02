@@ -393,7 +393,7 @@
 			<!--国立医学院-->
 			<Type>BUILDING_NATIONAL_MEDICAL_COLLEGE</Type>
 			<BuildingClass>BUILDINGCLASS_NATIONAL_MEDICAL_COLLEGE</BuildingClass>
-			<Cost>300</Cost>
+			<Cost>280</Cost>
 			<!--前置科技植物医学-->
 			<PrereqTech>TECH_NATURAL_MEDICINE</PrereqTech>
 			<Help>TXT_KEY_NATIONAL_MEDICAL_COLLEGE_HELP</Help>
@@ -411,6 +411,28 @@
 			<!--医学家槽-->
 			<SpecialistType>SPECIALIST_DOCTOR</SpecialistType>
 			<SpecialistCount>2</SpecialistCount>
+		</Row>
+
+		<Row>
+			<!--西海都护府-->
+			<Type>BUILDING_XIHAI_REGIONS_FRONTIER_COMMAND</Type>
+			<BuildingClass>BUILDINGCLASS_XIHAI_REGIONS_FRONTIER_COMMAND</BuildingClass>
+			<Cost>240</Cost>
+			<!--前置科技地图学-->
+			<PrereqTech>TECH_CARTOGRAPHY</PrereqTech>
+			<Help>TXT_KEY_XIHAI_REGIONS_FRONTIER_COMMAND_HELP</Help>
+			<Description>TXT_KEY_XIHAI_REGIONS_FRONTIER_COMMAND</Description>
+			<Civilopedia>TXT_KEY_XIHAI_REGIONS_FRONTIER_COMMAND_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_XIHAI_REGIONS_FRONTIER_COMMAND_STRATEGY</Strategy>
+			<NukeImmune>true</NukeImmune>
+			<!--每座城市增加成本-->
+			<NumCityCostMod>7</NumCityCostMod>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<MinAreaSize>-1</MinAreaSize>
+			<NeverCapture>true</NeverCapture>
+			<IconAtlas>NationalPlanning_ATLAS</IconAtlas>
+			<PortraitIndex>19</PortraitIndex>
+			<PolicyBranchType>POLICY_BRANCH_PATRONAGE</PolicyBranchType>
 		</Row>
 		
 	</Buildings>

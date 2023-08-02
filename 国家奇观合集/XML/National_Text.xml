@@ -404,6 +404,24 @@
 			<Text>这个国家奇观能加快大医学家的诞生速度，并缓解帝国的健康度压力。</Text>
 		</Row>
 
+		<!--西海都护府-->
+		<Row Tag="TXT_KEY_XIHAI_REGIONS_FRONTIER_COMMAND">
+			<Text>西海都护府</Text>
+		</Row>
+		<Row Tag="TXT_KEY_XIHAI_REGIONS_FRONTIER_COMMAND_HELP">
+			<Text>
+			[ICON_BULLET]需要赞助。
+			[NEWLINE][ICON_BULLET]完成城邦任务后降低没有西海都护府的其他玩家对该城邦的15%的[ICON_INFLUENCE]影响力。
+			[NEWLINE][ICON_BULLET]赠送城邦军事单位获得的[ICON_INFLUENCE]影响力+3，当共同对敌作战时军事城邦提供单位的基准频率+100%。
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_XIHAI_REGIONS_FRONTIER_COMMAND_PEDIA">
+			<Text>“都护府”源自西汉宣帝神爵二年（公元前60年）设在乌垒的西域都护府，统领大宛及其以东城郭诸国，兼督察乌孙、康居等游牧行国。魏、西晋设有西域长史府，唐朝统一西域，设立安西、北庭（金山）、昆陵、蒙池等都护府。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_XIHAI_REGIONS_FRONTIER_COMMAND_STRATEGY">
+			<Text>这个国家奇观有益于帝国和其他国家竞争城邦影响力</Text>
+		</Row>
+
 	</Language_en_US>
 	<Language_zh_CN>
 		<Update>

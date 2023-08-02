@@ -138,5 +138,13 @@
 			<Description>TXT_KEY_NATIONAL_MEDICAL_COLLEGE</Description>
 			<MaxPlayerInstances>1</MaxPlayerInstances>
 		</Row>
+
+		<!--西海都护府-->
+		<Row>
+			<Type>BUILDINGCLASS_XIHAI_REGIONS_FRONTIER_COMMAND</Type>
+			<DefaultBuilding>BUILDING_XIHAI_REGIONS_FRONTIER_COMMAND</DefaultBuilding>
+			<Description>TXT_KEY_XIHAI_REGIONS_FRONTIER_COMMAND</Description>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
 	</BuildingClasses>
 </GameData>
