@@ -41,14 +41,14 @@
         <Type>Mod</Type>
         <Name>Super Power - Remaking of World Order</Name>
         <Id>f9b9c8aa-b6d1-4188-9239-c1de2207ab7c</Id>
-        <MinVersion>0</MinVersion>
+        <MinVersion>9</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>
       <Association>
         <Type>Mod</Type>
         <Name>世界强权</Name>
         <Id>41450919-c52c-406f-8752-5ea34be32b2d</Id>
-        <MinVersion>0</MinVersion>
+        <MinVersion>13</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>
     </ModDependencies>
