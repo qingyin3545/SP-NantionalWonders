@@ -339,6 +339,7 @@ GameEvents.CityCanConstruct.Add(QYCityCanConstruct)
 
 local NationalMedicalCollege = GameInfoTypes.BUILDING_NATIONAL_MEDICAL_COLLEGE
 local UnitDoctor = GameInfoTypes.UNITCLASS_DOCTOR
+local ModernDoctor = GameInfoTypes.UNITCLASS_MODERN_DOCTOR
 local GreatDoctor = GameInfoTypes.UNITCLASS_GREAT_DOCTOR
 function QYUnitCreated(iPlayer, iUnit, iUnitType, iPlotX, iPlotY)
     local pPlayer = Players[iPlayer]
@@ -360,7 +361,7 @@ function QYUnitCreated(iPlayer, iUnit, iUnitType, iPlotX, iPlotY)
 			end
 		end
 	
-	elseif pUnitClass == UnitDoctor
+	elseif pUnitClass == UnitDoctor or pUnitClass == ModernDoctor
 	then
 		if pPlayer:HasBuilding(NationalMedicalCollege) then
 			debugPrint("拥有国家医学院且医生诞生!")
