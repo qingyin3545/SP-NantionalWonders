@@ -48,7 +48,7 @@
         <Type>Mod</Type>
         <Name>世界强权</Name>
         <Id>41450919-c52c-406f-8752-5ea34be32b2d</Id>
-        <MinVersion>13</MinVersion>
+        <MinVersion>19</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>
     </ModDependencies>

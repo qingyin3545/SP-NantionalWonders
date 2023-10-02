@@ -12,7 +12,7 @@
 		<Row Tag="TXT_KEY_THERMAL_POWER_PLANNING_DEPARTMENT_HELP">
 			<Text>
 			[ICON_BULLET]工业政策解锁，需要大型城市。
-			[NEWLINE][ICON_BULLET]燃煤发电站、燃煤发电扩容机组、燃油发电站、燃气发电站带来的全局[ICON_DISEASE]疾病惩罚降低1/2且+1[ICON_HEALTH]健康度。
+			[NEWLINE][ICON_BULLET]燃煤发电站、燃煤发电扩容机组、燃油发电站、燃气发电站带来的[ICON_DISEASE]疾病百分比惩罚降低1/2且+1[ICON_HEALTH]健康度。
 			[NEWLINE][ICON_BULLET]燃气发电站+2[ICON_RES_ELECTRICITY]电力。
 			[NEWLINE][ICON_BULLET]建造价格随城市数量增加。
 			</Text>
@@ -38,7 +38,7 @@
 		<Row Tag="TXT_KEY_INDUSTRIAL_PLANNING_DIVISION_HELP">
 			<Text>
 			[ICON_BULLET]工业政策解锁，只能在[ICON_CAPITAL]首都建造且需要特大城市。
-			[NEWLINE][ICON_BULLET]所有工厂、石油精炼厂、增殖反应堆、矿业公司、电冶金厂、炼焦厂带来的全局[ICON_DISEASE]疾病惩罚降低1/3且+1[ICON_HEALTH]健康度。
+			[NEWLINE][ICON_BULLET]所有工厂、石油精炼厂、增殖反应堆、矿业公司、电冶金厂、炼焦厂带来的[ICON_DISEASE]疾病百分比惩罚降低1/3且+1[ICON_HEALTH]健康度。
 			[NEWLINE][ICON_BULLET]建造价格随城市数量增加。
 			</Text>
 		</Row>
@@ -63,7 +63,7 @@
 		<Row Tag="TXT_KEY_NUCLEAR_POWER_MANAGEMENT_DEPARTMENT_HELP">
 			<Text>
 			[ICON_BULLET]工业政策解锁，需要特大城市。
-			[NEWLINE][ICON_BULLET]核电站和核电扩容机组-3%全局[ICON_DISEASE]疾病惩罚。
+			[NEWLINE][ICON_BULLET]核电站和核电扩容机组-3%本地[ICON_DISEASE]疾病惩罚。
 			[NEWLINE][ICON_BULLET]所有核电站、核电扩容机组、核聚变发电站、钍反应堆+3[ICON_PRODUCTION]产能。
 			[NEWLINE][ICON_BULLET]建造价格随城市数量增加。
 			</Text>
