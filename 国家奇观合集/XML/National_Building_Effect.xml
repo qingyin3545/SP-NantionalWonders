@@ -124,7 +124,7 @@
 			<!--关联建筑-地月输电网络-->
 			<BuildingType>BUILDING_LUNAR_POWER_TRANSMISSION</BuildingType>
 			<!--受影响的建筑-月球基地-->
-			<BuildingClassType>BUILDINGCLASS_FW_MOON_BASE</BuildingClassType>
+			<BuildingClassType>BUILDINGCLASS_MOON_BASE</BuildingClassType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<YieldChange>500</YieldChange>
 		</Row>

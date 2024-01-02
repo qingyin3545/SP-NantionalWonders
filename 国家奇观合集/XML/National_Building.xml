@@ -468,7 +468,7 @@
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_LUNAR_POWER_TRANSMISSION</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_FW_MOON_BASE</BuildingClassType>
+			<BuildingClassType>BUILDINGCLASS_MOON_BASE</BuildingClassType>
 		</Row>
 
 		<!--圣盾系统前置大都会和阿玛塞尔纤维-->
