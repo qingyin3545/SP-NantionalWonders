@@ -17,6 +17,8 @@ local houseOfLords = GameInfoTypes["BUILDING_HOUSE_OF_LORDS"]
 local houseOfLordsPolicy = GameInfoTypes["POLICY_HOUSE_OF_LORDS_FREE"]
 --皇城司
 local imperialCityDepartment = GameInfoTypes["BUILDING_IMPERIAL_CITY_DEPARTMENT"]
+--国子监
+local imperialCollege = GameInfoTypes["BUILDING_IMPERIAL_COLLEGE_OF_SUPERVISION"]
 --近卫军
 local nationalGuardType = GameInfoTypes["UNIT_NATIONAL_GUARD"]
 local nationalGuardClass = GameInfoTypes["UNITCLASS_NATIONAL_GUARD"]
@@ -24,8 +26,7 @@ local nationalGuardClass = GameInfoTypes["UNITCLASS_NATIONAL_GUARD"]
 local statueOfVictory = GameInfoTypes["BUILDING_STATUE_OF_VICTORY"]
 --宏伟开门
 local policyGrandeur =  GameInfoTypes["POLICY_BRANCH_GRANDEUR"]
---国子监
-local imperialCollege = GameInfoTypes["BUILDING_IMPERIAL_COLLEGE_OF_SUPERVISION"]
+
 --党卫军部
 local Schutzstaffel = GameInfoTypes["BUILDING_AUTOCRACY_SCHUTZSTAFFEL"]
 --国家集会场
@@ -322,24 +323,30 @@ function QYCityCanConstruct(iPlayer, iCity, iBuilding)
 	and not (CapCity:IsOriginalCapital() and iPlayer == CapCity:GetOriginalOwner())
 	then
 		--不再允许失去原始首都的ai建造
-		if iBuilding == GameInfoTypes.BUILDING_IMPERIAL_CITY_DEPARTMENT --皇城司
-		or iBuilding == GameInfoTypes.BUILDING_IMPERIAL_COLLEGE_OF_SUPERVISION  --国子监
-		or iBuilding == GameInfoTypes.BUILDING_STATUE_OF_VICTORY --胜利女神像
-		or iBuilding == GameInfoTypes.BUILDING_AUTOCRACY_SCHUTZSTAFFEL --党卫军部
-		or iBuilding == GameInfoTypes.BUILDING_FREEDOM_BUCKINGHAM_PALACE --白金汉宫
-		or iBuilding == GameInfoTypes.BUILDING_FREEDOM_FREEDOM_LINCOLN_MEMORIAL --解放纪念堂
-		or iBuilding == GameInfoTypes.BUILDING_FREEDOM_ORDER_RED_SQUARE --红场
+		if iBuilding == imperialCityDepartment --皇城司
+		or iBuilding == imperialCollege  --国子监
+		or iBuilding == statueOfVictory --胜利女神像
+		or iBuilding == Schutzstaffel --党卫军部
+		or iBuilding == buckinghamPalace --白金汉宫
+		or iBuilding == lincolnMemorial --解放纪念堂
+		or iBuilding == redSquare --红场
 		then 
 			return false
 		end
-	end  
+	end
+	--皇城司和贵族议会只能造一个
+	if (iBuilding == imperialCityDepartment and pPlayer:HasBuilding(houseOfLords))
+	or (iBuilding == houseOfLords and pPlayer:HasBuilding(imperialCityDepartment))
+	then
+		return false
+	end
 	return true
  end
 GameEvents.CityCanConstruct.Add(QYCityCanConstruct)
 
 local NationalMedicalCollege = GameInfoTypes.BUILDING_NATIONAL_MEDICAL_COLLEGE
 local UnitDoctor = GameInfoTypes.UNITCLASS_DOCTOR
-local ModernDoctor = GameInfoTypes.UNITCLASS_MODERN_DOCTOR
+--local ModernDoctor = GameInfoTypes.UNITCLASS_MODERN_DOCTOR
 local GreatDoctor = GameInfoTypes.UNITCLASS_GREAT_DOCTOR
 function QYUnitCreated(iPlayer, iUnit, iUnitType, iPlotX, iPlotY)
     local pPlayer = Players[iPlayer]
@@ -361,7 +368,7 @@ function QYUnitCreated(iPlayer, iUnit, iUnitType, iPlotX, iPlotY)
 			end
 		end
 	
-	elseif pUnitClass == UnitDoctor or pUnitClass == ModernDoctor
+	elseif pUnitClass == UnitDoctor --or pUnitClass == ModernDoctor
 	then
 		if pPlayer:HasBuilding(NationalMedicalCollege) then
 			debugPrint("拥有国家医学院且医生诞生!")
