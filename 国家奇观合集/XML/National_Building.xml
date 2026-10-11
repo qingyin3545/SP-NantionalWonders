@@ -89,8 +89,8 @@
 			<Type>BUILDING_LUNAR_POWER_TRANSMISSION</Type>
 			<BuildingClass>BUILDINGCLASS_LUNAR_POWER_TRANSMISSION</BuildingClass>
 			<Cost>40000</Cost>
-			<!--前置科技场理论-->
-			<PrereqTech>TECH_SUPERCONDUCTIVITY</PrereqTech>
+			<!--前置科技理论物理学-->
+			<PrereqTech>TECH_EARTH</PrereqTech>
 			<Help>TXT_KEY_LUNAR_POWER_TRANSMISSION_HELP</Help>
 			<Description>TXT_KEY_LUNAR_POWER_TRANSMISSION</Description>
 			<Civilopedia>TXT_KEY_LUNAR_POWER_TRANSMISSION_PEDIA</Civilopedia>

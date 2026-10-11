@@ -7,8 +7,8 @@
     <Guid>dbf853dc-999d-46c6-9216-d3dcff9192d2</Guid>
     <ModVersion>6</ModVersion>
     <Stability>Alpha</Stability>
-    <Teaser>主要添加了不同政策以及发电站有关的国家奇观。</Teaser>
-    <Description>主要添加了不同政策以及发电站有关的国家奇观。</Description>
+    <Teaser>(6.7)主要添加了不同政策以及发电站相关的国家奇观。</Teaser>
+    <Description>主要添加了不同政策以及发电站相关的国家奇观。</Description>
     <Authors>qingyin</Authors>
     <SpecialThanks>
     </SpecialThanks>
@@ -249,6 +249,10 @@
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="XML\National_Unit.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="ChangeLog.txt">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
